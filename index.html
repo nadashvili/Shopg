@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">ShopMate</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Manage Products</h1>
+        <form id="add-product-form">
+            <input type="password" id="admin-password" placeholder="Enter Password" required>
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="url" id="product-image" placeholder="Image URL" required>
+            <input type="tel" id="seller-phone" placeholder="Seller Phone Number" required>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <div class="product-list" id="product-list">
+            <!-- Products will be added dynamically -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
